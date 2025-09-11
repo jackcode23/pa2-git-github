@@ -14,27 +14,47 @@
   </head>
   <body>
     <div class="contenedor">
-        <header>
-          <div class="logo">
-            <h1>Carlos Arturo</h1>
-            <p>Desarrollador web</p>
+      <header>
+        <div class="logo">
+          <h1>Carlos Arturo</h1>
+          <p>Desarrollador web</p>
+        </div>
+        <form action="">
+          <input
+            type="text"
+            class="barra-busqueda"
+            id="barra-busqueda"
+            placeholder="Buscar"
+          />
+        </form>
+        <div class="categorias" id="categorias">
+          <a href="#" class="activo">Todos</a>
+          <a href="#">Naturaleza</a>
+          <a href="#">Ciudades</a>
+          <a href="#">Personas</a>
+          <a href="#">Animales</a>
+        </div>
+      </header>
+      <section class="grid">
+        <div class="item">
+          <div class="item-contenido">
+            <img src="img/ciudad1.png" alt="" />
           </div>
-          <form action="">
-            <input
-              type="text"
-              class="barra-busqueda"
-              id="barra-busqueda"
-              placeholder="Buscar"
-            />
-          </form>
-          <div class="categorias" id="categorias">
-            <a href="#" class="activo">Todos</a>
-            <a href="#">Naturaleza</a>
-            <a href="#">Ciudades</a>
-            <a href="#">Personas</a>
-            <a href="#">Animales</a>
+        </div>
+        <div class="item">
+          <div class="item-contenido">
+            <img src="img/ciudad1.png" alt="" />
           </div>
+        </div>
+        <div class="item">
+          <div class="item-contenido">
+            <img src="img/ciudad1.png" alt="" />
+          </div>
+        </div>
+      </section>
     </div>
-    </header>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
