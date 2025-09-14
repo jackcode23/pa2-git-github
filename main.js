@@ -20,14 +20,8 @@ window.addEventListener('load', () => {
     });
   });
 })
-// Agregamos el listener para la barra de busqueda
-	document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
-		const busqueda = evento.target.value;
-		grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
-	});
-
-	// Agregamos listener para las imagenesgen
-	const overlay = document.getElementById('overlay');
+/
+ById('overlay');
 	document.querySelectorAll('.grid .item img').forEach((elemento) => {
 		elemento.addEventListener('click', () => {
 			const ruta = elemento.getAttribute('src');
