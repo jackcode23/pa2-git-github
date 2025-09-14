@@ -3,3 +3,6 @@ const grid = new Muuri('.grid', {
     rounding: false,
   },
 });
+
+console.log('Hola mundo');
+console.log('hola miguel');
