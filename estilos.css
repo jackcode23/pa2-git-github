@@ -71,9 +71,14 @@ header .categorias a.activo {
 .grid {
   position: relative;
   width: 100%;
-  /**/
-  /**/
+ opacity: 0;
+ transition: opacyti 0.5s linear 1s;
 }
+
+.grid.imagenes-cargadas {
+  opacity: 1;
+}
+
 .grid .item {
   position: absolute;
   display: block;
