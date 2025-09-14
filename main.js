@@ -21,10 +21,4 @@ window.addEventListener('load', () => {
   });
 })
 
-hola borren esto cancelIdleCallback
-<footer>
-  <p>© 2025 Mi Portafolio</p>
-</footer>
-<footer>
-  <p>© 2025 Portafolio de Deysi</p>
-</footer>
+
