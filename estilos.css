@@ -55,7 +55,7 @@ header .categorias {
 }
 header .categorias a {
   color: #9b9b9b;
-  margin: 10px 20px;
+  margin: 10px 12px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -71,8 +71,8 @@ header .categorias a.activo {
 .grid {
   position: relative;
   width: 100%;
- opacity: 0;
- transition: opacyti 0.5s linear 1s;
+  opacity: 0;
+  transition: opacity 0.5s linear 0.1s;
 }
 
 .grid.imagenes-cargadas {
@@ -100,53 +100,60 @@ header .categorias a.activo {
 /* Overlay */
 /* ------------------------- */
 .overlay {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0,0,0,.9);
-	width: 100%;
-	height: 100vh;
-	display: none;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.9);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 999;
 }
 
 .overlay.activo {
-	display: flex;
+  display: flex;
 }
 
 .overlay img {
-	max-width: 100%;
+  max-width: 90%;
+  max-height: 70vh;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 
 .overlay .descripcion {
-	display: block;
-	background: #fff;
-	padding: 20px;
-	text-align: center;
-	margin-top: 5px;
-	border-radius: 10px;
-	max-width: 50%;
+  display: block;
+  background: #fff;
+  padding: 12px 16px;
+  text-align: center;
+  margin-top: 12px;
+  border-radius: 8px;
+  max-width: 80%;
 }
 
 .contenedor-img {
-	position: relative;
+  position: relative;
 }
 
 .overlay #btn-cerrar-popup {
-	background: none;
-	font-size: 20px;
-	color: #fff;
-	border: none;
-	cursor: pointer;
-	position: absolute;
-	right: -20px;
-	top: -20px;
+  background: none;
+  font-size: 22px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: -20px;
 }
 
+/* Footer */
 footer .redes-sociales {
   display: flex;
   align-content: center;
@@ -167,7 +174,6 @@ footer .redes-sociales a {
   transition: .3s ease all;
 }
 
-
 footer .redes-sociales .twitter {background-color: #1da1f2;}
 footer .redes-sociales .facebook {background-color: #3b5998;}
 footer .redes-sociales .instagram {background-color: #c13584;}
@@ -175,12 +181,10 @@ footer .redes-sociales .instagram {background-color: #c13584;}
 footer .redes-sociales a i {
   font-size: 20px;
   line-height: 60px;
-
 }
 
 footer .contenedor-icono:hover a {
   animation: icono .5s ease;
-
 }
 
 @keyframes icono {
@@ -201,3 +205,11 @@ footer .creado-por{
 
 footer .creado-por a {color: #000;}
 footer .creado-por a:hover {text-decoration: underline;}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid .item { width: calc(50% - 20px); }
+}
+@media (max-width: 480px) {
+  .grid .item { width: calc(100% - 20px); }
+}
