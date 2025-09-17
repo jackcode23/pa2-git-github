@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="estilos.css" />
   </head>
+
   <body>
     <div class="contenedor">
       <header>
@@ -19,6 +20,7 @@
           <h1>Carlos Arturo</h1>
           <p>Desarrollador web</p>
         </div>
+
         <form action="">
           <input
             type="text"
@@ -27,103 +29,106 @@
             placeholder="Buscar"
           />
         </form>
+
         <div class="categorias" id="categorias">
           <a href="#" class="activo">Todos</a>
           <a href="#">Naturaleza</a>
           <a href="#">Ciudades</a>
           <a href="#">Personas</a>
           <a href="#">Animales</a>
+          <a href="#">Paisajes</a>
         </div>
       </header>
-      <section class="grid" id="grid">
-        <div class="item" 
-             data-categoria="Ciudades" 
-             data-etiquetas="Ciudades autos carros calles"
-        >
-          <div class="item-contenido">
-            <img src="img/ciudad1.png" alt="" />
-          </div>
-        </div>
-        <div class="item" 
-             data-categoria="Personas" 
-             data-etiquetas="Personas mujeres"
-        >
-          <div class="item-contenido">
-            <img src="img/persona1.png" alt="" />
-          </div>
-        </div>
-        <div class="item" 
-             data-categoria="Animales" 
-             data-etiquetas="Animales leones"
-        >
-          <div class="item-contenido">
-            <img src="img/animal1.png" alt="" />
-          </div>
-        </div>
-        <div class="item" 
-             data-categoria="Ciudades" 
-             data-etiquetas="Ciudades calles"
-        >
-          <div class="item-contenido">
-            <img src="img/ciudad2.png" alt="" />
-          </div>
-        </div>
-        <div class="item" 
-             data-categoria="Personas" 
-             data-etiquetas="Personas mujeres"
-        >
-          <div class="item-contenido">
-            <img src="img/persona2.png" alt="" />
-          </div>
-        </div>
-        <div class="item" 
-             data-categoria="Animales" 
-             data-etiquetas="Animales pandas"
-        >
-          <div class="item-contenido">
-            <img src="img/animal2.png" alt="" />
-          </div>
-        </div>
-        <div class="item" 
-             data-categoria="Naturaleza" 
-             data-etiquetas="Naturaleza arboles"
-        >
-          <div class="item-contenido">
-            <img src="img/naturaleza1.png" alt="" />
-          </div>
-        </div>
-        <section class="overlay" id="overlay">
-			<div class="contenedor-img">
-				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-				<img src="" alt="">
-			</div>
-			<p class="descripcion"></p>
-		</section>
 
-		<footer class="contenedor">
-			<div class="redes-sociales">
-				<div class="contenedor-icono">
-					<a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</div>
-        <div class="contenedor-icono">
-					<a href="http://www.facebook.com" target="_blank" class="facebook">
-						<i class="fa-brands fa-facebook"></i>
-					</a>
-				</div>
-        <div class="contenedor-icono">
-					<a href="http://www.instagram.com" target="_blank" class="instagram">
-						<i class="fa-brands fa-instagram"></i>
-					</a>
-				</div>
-         </div> 
-       <div class "creado-por">
-            <p> Sitio diseñado por <a href="#">Grupo 7</a> - <a href="http://www.facebook.com">GRUPO 7
-    </div>
-     <footer>
+       <section class="grid" id="grid">
+        <div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles" data-descripcion="Vista urbana con autos">
+          <div class="item-contenido">
+            <img src="img/ciudad1.png" alt="Ciudad 1" />
+          </div>
+        </div>
+
+        <div class="item" data-categoria="personas" data-etiquetas="personas mujeres" data-descripcion="Persona1">
+          <div class="item-contenido">
+            <img src="img/persona1.png" alt="Persona 1" />
+          </div>
+        </div>
+
+        <div class="item" data-categoria="animales" data-etiquetas="animales leones" data-descripcion="León">
+          <div class="item-contenido">
+            <img src="img/animal1.png" alt="Animal 1" />
+          </div>
+        </div>
+
+        <div class="item" data-categoria="ciudades" data-etiquetas="ciudades calles" data-descripcion="Calle de la ciudad">
+          <div class="item-contenido">
+            <img src="img/ciudad2.png" alt="Ciudad 2" />
+          </div>
+        </div>
+
+        <div class="item" data-categoria="personas" data-etiquetas="personas hombres" data-descripcion="Persona2">
+          <div class="item-contenido">
+            <img src="img/persona2.png" alt="Persona 2" />
+          </div>
+        </div>
+
+        <div class="item" data-categoria="animales" data-etiquetas="animales pandas" data-descripcion="Panda">
+          <div class="item-contenido">
+            <img src="img/animal2.png" alt="Animal 2" />
+          </div>
+        </div>
+
+        <div class="item" data-categoria="naturaleza" data-etiquetas="naturaleza arboles bosque" data-descripcion="Hojas de árboles">
+          <div class="item-contenido">
+            <img src="img/naturaleza1.png" alt="Naturaleza 1" />
+          </div>
+        </div>
+
+        <div class="item" data-categoria="paisajes" data-etiquetas="paisajes montañas campo" data-descripcion="Montañas y valle">
+          <div class="item-contenido">
+            <img src="img/paisaje2.png" alt="Paisaje 2" />
+          </div>
+        </div>
+
+        <div class="item" data-categoria="paisajes" data-etiquetas="paisajes playa mar" data-descripcion="Playa al atardecer">
+          <div class="item-contenido">
+            <img src="img/paisaje1.png" alt="Paisaje 1" />
+          </div>
+        </div>
+      </section> 
+
+        <section class="overlay" id="overlay" aria-hidden="true">
+        <div class="contenedor-img">
+          <button id="btn-cerrar-popup" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+          <img src="" alt="Imagen ampliada">
+        </div>
+        <p class="descripcion"></p>
       </section>
+
+		 <footer class="contenedor">
+        <div class="redes-sociales">
+          <div class="contenedor-icono">
+            <a href="http://www.twitter.com" target="_blank" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="contenedor-icono">
+            <a href="http://www.facebook.com" target="_blank" class="facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="contenedor-icono">
+            <a href="http://www.instagram.com" target="_blank" class="instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="creado-por">
+          <p>Sitio diseñado por <a href="#">Grupo 7</a></p>
+        </div>
+      </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
     <script src="main.js"></script>
